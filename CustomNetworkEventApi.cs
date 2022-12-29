@@ -21,7 +21,6 @@ namespace YourClient
         {
             List<GameObject> udonBehaviours = new List<GameObject>();
             GameObject[] gameObjects = Object.FindObjectsOfType<GameObject>();
-            udonBehaviours.Clear();
             foreach (GameObject gameObject in gameObjects) if (gameObject.GetComponent<UdonBehaviour>() != null) udonBehaviours.Add(gameObject);
             return udonBehaviours;
         }
@@ -33,7 +32,6 @@ namespace YourClient
         {
             List<KeyValuePair<string, List<uint>>> events = new List<KeyValuePair<string, List<uint>>>();
             if (udonBehaviour == null) return null;
-            events.Clear();
             foreach (KeyValuePair<string, List<uint>> udonEvent in udonBehaviour?._eventTable) events.Add(udonEvent);
             return events;
         }
