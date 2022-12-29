@@ -56,7 +56,7 @@ CustomNetworkEventApi.BringObjectToSelf("objectName");
 ```
 
 
-## Get Object / Events / Network Events
+## Get Objects / Events / Network Events
 
 ###### GetGameObjects:
 ```cs
